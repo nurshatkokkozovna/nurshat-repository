@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center>
+}
+.error-paragraph {
+    color: red;
+}
+.primary-paragraph {
+    color: blue; 
+}
+.btn {
+    border: 0;
+    outline: 0;
+    background-color: rgb(156, 78, 163);
+    /* background: linear-gradient( -45deg #f09, #08f5fd);
+    /* background-color: #f09;
+    padding: 5px; 15px; 
+    margin: 5px;*/ 
+    border-radius: 5px;
+    cursor:pointer; 
+    /*margin: 5px; */
+    transition: border-radius .5s, background-colr 2s;
+
+}
+.btn:hover {
+    border-radius: 10px;
+    background-color: blueviolet ;
+}
+.btn:active {
+background-color: black;
+}
