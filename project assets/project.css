@@ -1,0 +1,120 @@
+/* General layout */
+body {
+  background-color: gainsboro;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+/* Card container */
+.card {
+  background: slategrey;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(49, 45, 45, 0.3);
+}
+
+/* Login Card */
+.login-card {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #222121;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.login-card a {
+  color: #60a5fa;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: #e5e5e5;
+  color: black;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.btn-secondary {
+  background: #2a2a2a;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Stats section */
+.stats {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.stat-card {
+  width: 200px;
+  text-align: center;
+}
+
+.stat-card .value {
+  font-size: 150%;
+  font-weight: bold;
+}
+
+.trend {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.trend.up {
+  color: lightgreen;
+}
+
+.trend.down {
+  color: red;
+}
+
+/* Product Cards */
+.products {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-card {
+  width: 160px;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+/* Footer */
+.footer-card {
+  width: 320px;
+  text-align: center;
+}
+
+.link {
+  color: #60a5fa;
+  text-decoration: none;
+}
