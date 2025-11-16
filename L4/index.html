@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style4.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
     <title>Lesson 3</title>
 </head>
 
@@ -13,19 +13,37 @@
 <header>
     LOGO
     <nav>
-        <a href=""> </a>
+        <a href="./pages/price.html">Prices</a>
+        <a href="./pages/about.html">About</a>
     </nav>
 
-    <button data-notfications="16" class="btn btn_outline btn_notifications"> 
-        <img src="./bell.png" alt="bell">
-        
-    </button>
+<button data-notifications="16" class="btn btn_outline btn_notifications">
+    <img src="./assets/icons/bell.svg" class="notify-icon" alt="">
+</button>
+
 </header>
 
 <main> 
 
+    <div>
+        <a href="#sticky_cont">Sticky container</a>
+    </div>
 
-<img src="img3.jpg">
+    <label for="sel">Lang</label>
+    <select name="" id="sel">
+        <option value="">
+            RU 
+        </option>
+ <option value="">
+            EN 
+        </option>
+ <option value="">
+            KZ 
+        </option>
+
+    </select>
+
+<img src="./assets/images/img3.jpg">
 <section class="news_cards_block">
    
 
@@ -102,7 +120,7 @@
   <div class="test test4">T4</div>
 </div>
 
-<div class="sticky_container">
+<div id="sticky_cont" class="sticky_container">
 
 <div class="sticky_element"></div>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus inventore possimus quam consectetur non sed dolorum explicabo tempora soluta reprehenderit, aliquam nobis, porro optio alias, laboriosam mollitia vitae at debitis.

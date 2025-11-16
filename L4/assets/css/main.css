@@ -41,12 +41,8 @@ header {
     z-index: 50;
 }
 
-nav {
-    position: absolute;
-    right: 0;
-    bottom: 0;
 
-}
+
 main {
     padding-top: 100px;
     height: 500vh;
@@ -69,23 +65,34 @@ overflow-y: auto;
     background-color: rgb(173, 67, 156);
 }
 
+.notify-icon {
+    width: 30px;
+    height: 30px;
+}
+
 
 .btn_notifications {
     position: relative;
+ 
 }
 
 [data-notifications]::after {
-content: attr(data-notifications);
-position: absolute;
-top: -5;
-right: -5;
-width: 15px;
-font-size: 10px;
-aspect-ratio: 1;
-background-color: red;
-color: white;
-border-radius: 50%;
-display: flex;
-justify-content: center;
-align-items: center;
+    content:attr(data-notifications);
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15px;
+    font-size: 10px;
+    aspect-ratio: 1;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html {
+    scroll-behavior: smooth;
 }
