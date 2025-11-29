@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind Домашка</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <header class="bg-white shadow p-4">
+    <h1 class="text-2xl font-bold text-center">Homework по Tailwind</h1>
+  </header>
+
+  <main class="max-w-5xl mx-auto p-4 space-y-12">
+
+    <section>
+      <h2 class="text-xl font-semibold mb-4">Карточки товаров</h2>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+     
+        <div class="bg-white rounded-2xl shadow p-4 hover:shadow-lg transition">
+          <img src="./img/cat1.png" class="rounded-xl mb-3" alt="">
+          <h3 class="font-bold text-lg">British Cat</h3>
+          <p class="text-sm text-gray-600 mb-3">Очень умная порода Британских кошек</p>
+          <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+            Купить
+          </button>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow p-4 hover:shadow-lg transition">
+          <img src="./img/cat2.jpg" class="rounded-xl mb-3" alt="">
+          <h3 class="font-bold text-lg">Scottish fold cat</h3>
+          <p class="text-sm text-gray-600 mb-3">Шотландская вислоухие кошки самые красивые.</p>
+          <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+            Купить
+          </button>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow p-4 hover:shadow-lg transition">
+          <img src="./img/cat3.jpg" class="rounded-xl mb-3" alt="">
+          <h3 class="font-bold text-lg">Siamese cat</h3>
+          <p class="text-sm text-gray-600 mb-3">Очень необычный окрас кошек но часто встречается по всему миру.</p>
+          <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+            Купить
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="bg-white p-6 rounded-2xl shadow">
+      <h2 class="text-xl font-semibold mb-3">О нас</h2>
+      <p class="text-gray-700 leading-relaxed">
+        Мы — уютный питомник, который занимается разведением и продажей домашних кошек. 
+    Наши пушистые друзья проходят ветеринарный осмотр, растут в любви и заботе, 
+    обладают дружелюбным характером и отлично подходят для семей с детьми.
+      </p>
+    </section>
+
+   
+    <footer class="bg-gray-800 text-white p-6 rounded-2xl">
+      <p class="text-center">© 2025. Благовторительый проект приюта совместно с Tailwind CSS.</p>
+    </footer>
+
+  </main>
+
+</body>
+</html>
