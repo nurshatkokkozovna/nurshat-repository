@@ -1,0 +1,145 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/*  HERO */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 10%;
+  background: #fff7e6;
+}
+
+.hero__content {
+  max-width: 500px;
+}
+
+.hero__content h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hero__content p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.hero__btn {
+  padding: 12px 22px;
+  font-size: 18px;
+  background: #ffb84d;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.hero__img {
+  width: 45%;
+  border-radius: 12px;
+}
+
+                /* Katalooooogg */
+.section__title {
+  text-align: center;
+  margin: 40px 0 20px;
+  font-size: 32px;
+}
+
+.catalog__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 0 10% 50px;
+}
+
+.cat {
+  background: #fafafa;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.cat img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.cat h3 {
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+.cat p {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+                    /*abouuuuuut*/ 
+.about {
+  padding: 30px 10% 60px;
+  background: #fff0d6;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+
+/*  Планшет  */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero__img {
+    width: 70%;
+    margin-top: 20px;
+  }
+
+  .hero__content h1 {
+    font-size: 34px;
+  }
+
+  .catalog__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*  Телефон  */
+@media (max-width: 480px) {
+  .hero__content h1 {
+    font-size: 28px;
+  }
+
+  .hero__content p {
+    font-size: 16px;
+  }
+
+  .hero__btn {
+    font-size: 16px;
+    padding: 10px 18px;
+  }
+
+  .hero__img {
+    width: 100%;
+  }
+
+  .catalog__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cat {
+    padding: 16px;
+  }
+
+  .section__title {
+    font-size: 26px;
+  }
+
+  .about {
+    font-size: 16px;
+  }
+}
