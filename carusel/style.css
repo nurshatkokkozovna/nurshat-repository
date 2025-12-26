@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #c4cbe7;
+}
+
+.testimonials {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.testimonials__slider {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.testimonial {
+  background-color: #d7e9f3;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.text {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.role {
+  font-size: 14px;
+  color: #888;
+}
+
+.swiper-pagination {
+  margin-top: 30px;
+}
+
+/*  Адаптив */
+@media (max-width: 600px) {
+  .testimonial {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+}
