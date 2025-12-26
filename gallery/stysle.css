@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f6f7fb;
+}
+
+.gallery {
+  padding: 40px 20px;
+}
+
+.gallery__title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+/* Masonry */
+.gallery__grid {
+  column-count: 3;
+  column-gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery__grid a {
+  display: block;
+  margin-bottom: 20px;
+  break-inside: avoid;
+}
+
+.gallery__grid img {
+  width: 100%;
+  display: block;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery__grid img:hover {
+  transform: scale(1.03);
+}
+
+/* Адаптив */
+@media (max-width: 900px) {
+  .gallery__grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 500px) {
+  .gallery__grid {
+    column-count: 1;
+  }
+
+  .gallery__title {
+    font-size: 28px;
+  }
+}
