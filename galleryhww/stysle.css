@@ -75,7 +75,6 @@ body {
   }
 }
 
-/* Убираем внутренний скролл GLightbox */
 .glightbox-container {
   overflow: hidden !important;
 }
