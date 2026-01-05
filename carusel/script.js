@@ -15,3 +15,4 @@ const swiper = new Swiper('.testimonials__slider', {
     },
   },
 });
+
