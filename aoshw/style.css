@@ -1,0 +1,85 @@
+
+body {
+  margin: 0;
+  font-family: 'Poppins', Arial, sans-serif;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+  background-color: #f5f5f5;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+.block {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  margin: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+
+.block:hover {
+  transform: scale(1.03);
+}
+
+
+.block:nth-child(1) { background: linear-gradient(135deg, #FF6F61, #FF9472); }
+.block:nth-child(2) { background: linear-gradient(135deg, #6B5B95, #8C72B0); }
+.block:nth-child(3) { background: linear-gradient(135deg, #88B04B, #A8D08D); }
+.block:nth-child(4) { background: linear-gradient(135deg, #F7CAC9, #FAD0C4); }
+.block:nth-child(5) { background: linear-gradient(135deg, #92A8D1, #A0C4FF); }
+.block:nth-child(6) { background: linear-gradient(135deg, #FFB347, #FFCC33); }
+.block:nth-child(7) { background: linear-gradient(135deg, #6A0572, #A64AC9); }
+
+
+.block h1, .block p {
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+  margin: 0.5rem 0;
+}
+
+
+img {
+  width: 350px; 
+  max-width: 80%; 
+  border-radius: 15px;
+  margin-top: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+
+img:hover {
+  transform: scale(1.05);
+}
+
+
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px 18px;
+  background-color: rgba(0,0,0,0.7);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: none;
+  z-index: 100;
+  transition: background 0.3s ease;
+}
+
+#backToTop:hover {
+  background-color: rgba(0,0,0,0.9);
+}
